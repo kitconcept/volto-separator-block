@@ -1,0 +1,25 @@
+// Separator Block
+.block.separator {
+  display: block;
+  height: 54px;
+  border: none;
+  margin: 32px 0;
+
+  &:not(.inner)::after {
+    position: relative;
+    top: 50%;
+    display: block;
+    width: 100%;
+    border-top: 4px solid #ececed;
+    margin-top: -2px;
+    content: '';
+  }
+}
+
+.ui.block.inner.separator {
+  height: 85px;
+}
+
+.ui.basic.icon.button.separator {
+  height: inherit;
+}
