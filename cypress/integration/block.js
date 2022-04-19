@@ -13,9 +13,9 @@ context('Block Acceptance Tests', () => {
 
   it('As editor I can add a Separator block', () => {
     cy.visit('/document/edit');
-    cy.get('.block .slate-editor [contenteditable=true]').click();
+    cy.get('.block.inner.text .public-DraftEditor-content').click();
     cy.get('.button .block-add-button').click({ force: true });
-    cy.get('.button.separator').click();
+    cy.get('.blocks-chooser .mostUsed .button.separator').click();
     cy.get('#toolbar-save').click();
   });
-}
+});
