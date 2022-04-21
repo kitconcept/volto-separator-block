@@ -7,7 +7,7 @@
 
 ![kitconcept GmbH](https://github.com/kitconcept/volto-blocks/raw/master/kitconcept.png)
 
-The Volto Separator Block allows editors to add a separator to a Volto page.
+The Volto Separator Block allows editors to add a visual separator between blocks to a Volto page.
 
 ## Screenshot
 

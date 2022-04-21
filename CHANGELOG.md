@@ -2,12 +2,6 @@
 
 ## 1.0.1 (unreleased)
 
-### Breaking
-
-### Feature
-
-### Bugfix
-
 ### Internal
 
 - Added github workflows @robgietema
