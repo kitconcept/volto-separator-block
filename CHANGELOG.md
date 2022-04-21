@@ -1,5 +1,15 @@
 # Change Log
 
+## 1.0.2 (unreleased)
+
+### Breaking
+
+### Feature
+
+### Bugfix
+
+### Internal
+
 ## 1.0.1 (2022-04-21)
 
 ### Internal
