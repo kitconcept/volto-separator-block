@@ -1,7 +1,7 @@
 import React from 'react';
 
-const View = ({ data }) => {
+const SeparatorView = ({ data }) => {
   return <div className="block separator" />;
 };
 
-export default View;
+export default SeparatorView;
