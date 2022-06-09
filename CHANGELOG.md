@@ -4,6 +4,8 @@
 
 ### Breaking
 
+- Rework separator block, make it schema based @steffenri
+
 ### Feature
 
 ### Bugfix
