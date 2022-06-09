@@ -1,7 +1,15 @@
 import React from 'react';
 
-const View = ({ data }) => {
-  return <div className="block separator" />;
+import cx from 'classnames';
+
+const SeparatorView = (props) => {
+  //eslint-disable-next-line
+  const { className, data } = props;
+  return (
+    <div className={cx('block separator', className)}>
+      <div className="line" />
+    </div>
+  );
 };
 
-export default View;
+export default SeparatorView;

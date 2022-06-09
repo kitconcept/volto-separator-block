@@ -1,7 +1,23 @@
 import React from 'react';
+import { SidebarPortal } from '@plone/volto/components';
+import Data from './Data';
+import View from './View';
 
-const Edit = ({ data }) => {
-  return <div />;
+const SeparatorEdit = (props) => {
+  const { data, block, onChangeBlock, selected } = props;
+  return (
+    <>
+      <View {...props} isEditMode />
+      <SidebarPortal selected={selected}>
+        <Data
+          {...props}
+          data={data}
+          block={block}
+          onChangeBlock={onChangeBlock}
+        />
+      </SidebarPortal>
+    </>
+  );
 };
 
-export default Edit;
+export default SeparatorEdit;
