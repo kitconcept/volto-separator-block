@@ -6,7 +6,7 @@ const SeparatorEdit = (props) => {
   const { data, block, onChangeBlock, selected } = props;
   return (
     <>
-      <div />
+      <View {...props} />
       <SidebarPortal selected={selected}>
         <Data
           {...props}
