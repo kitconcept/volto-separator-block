@@ -19,6 +19,7 @@ const SeparatorData = (props) => {
         });
       }}
       formData={data}
+      fieldIndex={data.index}
       block={block}
     />
   );

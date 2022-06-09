@@ -1,8 +1,11 @@
 import React from 'react';
 
-const SeparatorView = ({ data }) => {
+import cx from 'classnames';
+
+const SeparatorView = (props) => {
+  const { className, data } = props;
   return (
-    <div className="block separator">
+    <div className={cx('block separator', className)}>
       <div className="line" />
     </div>
   );

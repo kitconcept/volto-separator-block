@@ -18,6 +18,7 @@ export default (config) => {
       addPermission: [],
       view: [],
     },
+    enableStyling: false,
   };
 
   return config;

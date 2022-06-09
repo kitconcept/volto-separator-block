@@ -1,12 +1,13 @@
 import React from 'react';
 import { SidebarPortal } from '@plone/volto/components';
 import Data from './Data';
+import View from './View';
 
 const SeparatorEdit = (props) => {
   const { data, block, onChangeBlock, selected } = props;
   return (
     <>
-      <View {...props} />
+      <View {...props} isEditMode />
       <SidebarPortal selected={selected}>
         <Data
           {...props}

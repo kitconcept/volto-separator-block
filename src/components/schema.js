@@ -11,14 +11,17 @@ const messages = defineMessages({
   },
 });
 
-export const SeparatorSchema = (props) => ({
-  title: props.intl.formatMessage(messages.separatorBlock),
-  block: 'separator',
-  fieldsets: [
-    {
-      id: 'default',
-      title: 'Default',
-    },
-  ],
-  required: [],
-});
+export const SeparatorSchema = (props) => {
+  return {
+    title: props.intl.formatMessage(messages.separatorBlock),
+    block: 'separator',
+    fieldsets: [
+      {
+        id: 'default',
+        title: 'Default',
+      },
+    ],
+    properties: {},
+    required: [],
+  };
+};
