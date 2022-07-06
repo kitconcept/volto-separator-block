@@ -1,12 +1,21 @@
+import { defineMessages } from 'react-intl';
+
 import divideHorizontalSVG from '@plone/volto/icons/divide-horizontal.svg';
 import SeparatorView from './components/View';
 import SeparatorEdit from './components/Edit';
 import './theme/main.less';
 
+defineMessages({
+  Separator: {
+    id: 'Separator',
+    defaultMessage: 'Separator',
+  },
+});
+
 export default (config) => {
   config.blocks.blocksConfig.separator = {
     id: 'separator',
-    title: 'Seperator',
+    title: 'Separator',
     icon: divideHorizontalSVG,
     group: 'teasers',
     view: SeparatorView,

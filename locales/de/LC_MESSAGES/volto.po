@@ -16,4 +16,17 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "X-Is-Fallback-For: de-at de-li de-lu de-ch de-de\n"
 
+#: index
+# defaultMessage: Separator
+msgid "Separator"
+msgstr "Trenner"
 
+#: components/schema
+# defaultMessage: Separator Block
+msgid "Separator Block"
+msgstr "Trenner Block"
+
+#: components/schema
+# defaultMessage: Title
+msgid "Title"
+msgstr "Titel"

@@ -11,4 +11,17 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+#: index
+# defaultMessage: Separator
+msgid "Separator"
+msgstr ""
 
+#: components/schema
+# defaultMessage: Separator Block
+msgid "Separator Block"
+msgstr ""
+
+#: components/schema
+# defaultMessage: Title
+msgid "Title"
+msgstr ""

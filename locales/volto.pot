@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2021-11-29T14:45:04.009Z\n"
+"POT-Creation-Date: 2022-07-06T14:03:14.032Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -13,4 +13,17 @@ msgstr ""
 "Preferred-Encodings: utf-8\n"
 "Domain: volto\n"
 
+#: index
+# defaultMessage: Separator
+msgid "Separator"
+msgstr ""
 
+#: components/schema
+# defaultMessage: Separator Block
+msgid "Separator Block"
+msgstr ""
+
+#: components/schema
+# defaultMessage: Title
+msgid "Title"
+msgstr ""
