@@ -6,13 +6,9 @@
 
 - Rework separator block, make it schema based @steffenri
 
-### Feature
-
 ### Bugfix
 
 - Fix translation string @robgietema
-
-### Internal
 
 ## 1.0.1 (2022-04-21)
 
