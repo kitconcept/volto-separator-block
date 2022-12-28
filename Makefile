@@ -13,7 +13,8 @@ MAKEFLAGS+=--no-builtin-rules
 # Project settings
 
 DIR=$(shell basename $$(pwd))
-ADDON ?= "volto-separator-block"
+GIT_NAME = volto-separator-block
+NAMESPACE = @kitconcept
 
 # Recipe snippets for reuse
 
@@ -32,7 +33,7 @@ project:
 	npm install -g yo
 	npm install -g @plone/generator-volto
 	npm install -g mrs-developer
-	yo @plone/volto project --addon ${ADDON} --workspace "src/addons/${DIR}" --no-interactive
+	yo @plone/volto project --addon ${NAMESPACE}/${GIT_NAME} --workspace "src/addons/${DIR}" --no-interactive
 	ln -sf $$(pwd) project/src/addons/
 	cp .project.eslintrc.js .eslintrc.js
 	cd project && yarn
@@ -56,3 +57,18 @@ start-backend-docker:		## Starts a Docker-based backend
 .PHONY: help
 help:		## Show this help.
 	@echo -e "$$(grep -hE '^\S+:.*##' $(MAKEFILE_LIST) | sed -e 's/:.*##\s*/:/' -e 's/^\(.\+\):\(.*\)/\\x1b[36m\1\\x1b[m:\2/' | column -c2 -t -s :)"
+
+.PHONY: prettier
+prettier: ## Run unit test suite for the addon
+	@echo "$(GREEN)==> Run prettier for the addon$(RESET)"
+	docker run -it --rm -e NAMESPACE="$(NAMESPACE)" -e DEPENDENCIES="$(DEPENDENCIES)" -e GIT_NAME="$(GIT_NAME)" -v $(shell pwd):/opt/frontend/my-volto-project/src/addons/$(GIT_NAME) plone/volto-addon-ci prettier
+
+.PHONY: lint
+lint: ## Run unit test suite for the addon
+	@echo "$(GREEN)==> Run ESlint for the addon$(RESET)"
+	docker run -it --rm -e NAMESPACE="$(NAMESPACE)" -e DEPENDENCIES="$(DEPENDENCIES)" -e GIT_NAME="$(GIT_NAME)" -v $(shell pwd):/opt/frontend/my-volto-project/src/addons/$(GIT_NAME) plone/volto-addon-ci eslint
+
+.PHONY: stylelint
+stylelint: ## Run unit test suite for the addon
+	@echo "$(GREEN)==> Run stylelint for the addon$(RESET)"
+	docker run -it --rm -e NAMESPACE="$(NAMESPACE)" -e DEPENDENCIES="$(DEPENDENCIES)" -e GIT_NAME="$(GIT_NAME)" -v $(shell pwd):/opt/frontend/my-volto-project/src/addons/$(GIT_NAME) plone/volto-addon-ci stylelint

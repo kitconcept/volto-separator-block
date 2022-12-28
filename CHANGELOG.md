@@ -10,6 +10,8 @@
 
 ### Internal
 
+- Update to latest Volto 16 best practices, yarn 3 @davisagli
+
 ## 2.0.0 (2022-09-02)
 
 ### Breaking
