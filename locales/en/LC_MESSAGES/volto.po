@@ -11,6 +11,16 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+#: components/schema
+# defaultMessage: Alignment
+msgid "Alignment"
+msgstr ""
+
+#: components/schema
+# defaultMessage: Hide Separator Line
+msgid "Hide Separator Line"
+msgstr ""
+
 #: index
 # defaultMessage: Separator
 msgid "Separator"

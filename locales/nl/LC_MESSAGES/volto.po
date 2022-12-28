@@ -15,6 +15,16 @@ msgstr ""
 "Language-Name: Nederlands\n"
 "Preferred-Encodings: utf-8\n"
 
+#: components/schema
+# defaultMessage: Alignment
+msgid "Alignment"
+msgstr ""
+
+#: components/schema
+# defaultMessage: Hide Separator Line
+msgid "Hide Separator Line"
+msgstr ""
+
 #: index
 # defaultMessage: Separator
 msgid "Separator"
