@@ -1,5 +1,5 @@
 import { defineMessages } from 'react-intl';
-import { SeparatorSchemaEnhancer } from './components/SeparatorSchemaEnhancer';
+import { SeparatorStyleEnhancer } from './components/schema';
 import divideHorizontalSVG from '@plone/volto/icons/divide-horizontal.svg';
 import SeparatorView from './components/View';
 import SeparatorEdit from './components/Edit';
@@ -20,7 +20,7 @@ export default (config) => {
     group: 'teasers',
     view: SeparatorView,
     edit: SeparatorEdit,
-    schemaEnhancer: SeparatorSchemaEnhancer,
+    schemaEnhancer: SeparatorStyleEnhancer,
     restricted: false,
     mostUsed: true,
     sidebarTab: 1,
