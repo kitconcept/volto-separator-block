@@ -1,20 +1,62 @@
-// Separator Block
+// //Separator Block
 .block.separator {
+  top: unset;
   display: block;
   height: 54px;
   border: none;
-  margin: 32px 0;
+  margin: 50px 0;
+  clear: both;
+
+  &:not(.inner):not([role='presentation']) {
+    padding: 25px 0 !important;
+  }
+
+  &::after {
+    display: none !important;
+  }
 
   .line {
-    height: 54px;
+    width: unset;
+    height: unset;
 
-    &::after {
+    &:not(.inner)::after {
       position: relative;
       top: 50%;
       display: block;
-      border-top: 4px solid #ececed;
-      margin-top: -2px;
+      width: unset;
+      border-top: 1px solid #000;
+      margin-top: -1px;
       content: '';
+    }
+  }
+
+  &.has--align--left {
+    .line {
+      margin-left: 0;
+
+      &::after {
+        width: 165px;
+      }
+    }
+  }
+
+  &.has--noLine--true {
+    .line::after {
+      display: none;
+    }
+  }
+}
+
+.block-editor-separator {
+  clear: both;
+
+  &.has--align--left .block.separator {
+    .line {
+      margin-left: 0;
+
+      &::after {
+        width: 165px;
+      }
     }
   }
 }
