@@ -2,7 +2,7 @@
 .block.separator {
   top: unset;
   display: block;
-  height: 54px;
+  height: unset;
   border: none;
   margin: 50px 0;
   clear: both;
@@ -11,19 +11,11 @@
     padding: 25px 0 !important;
   }
 
-  &::after {
-    display: none !important;
-  }
-
   .line {
-    width: unset;
-    height: unset;
-
-    &:not(.inner)::after {
+    &::after {
       position: relative;
       top: 50%;
       display: block;
-      width: unset;
       border-top: 1px solid #000;
       margin-top: -1px;
       content: '';
