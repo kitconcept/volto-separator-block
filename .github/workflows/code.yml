@@ -21,6 +21,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: yarn
+          cache-dependency-path: '**/yarn.lock'
 
       # node install
       - name: Install dependencies
@@ -30,7 +31,7 @@ jobs:
         run: npm i -g yo @plone/generator-volto
 
       - name: Setup addon testing environment
-        run: npx -p @plone/scripts addon clone https://github.com/${{env.GIT_USER}}/${{env.GIT_NAME}}.git --branch ${{env.GIT_BRANCH}}
+        run: npx -p @plone/scripts addon clone .
 
       # ESlint
       - name: ESlint
@@ -38,7 +39,7 @@ jobs:
 
       # Stylelint
       - name: Stylelint
-        run: cd addon-testing-project && yarn stylelint
+        run: cd addon-testing-project && yarn stylelint --allow-empty-input
 
       # Prettier
       - name: Prettier
