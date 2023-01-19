@@ -53,6 +53,37 @@ yarn start
 
 Go to http://localhost:3000, login, create a new page. The separator block will show up in the Volto blocks chooser.
 
+## Block Alignment Enhancer
+
+This block features by default a block `schemaEnhancer` that provides an alignment option for the separator. This can be disabled by overwriting with your own `schemaEnhancer`
+
+```js
+  config.blocks.blocksConfig.separator = {
+    ...config.blocks.blocksConfig.separator,
+    schemaEnhancer: mySeparatorSchemaEnhancer,
+  }
+```
+or setting it to `null` or `undefined`:
+
+```js
+  config.blocks.blocksConfig.separator = {
+    ...config.blocks.blocksConfig.separator,
+    schemaEnhancer: null,
+  }
+```
+
+Also, if you want to keep the default alignment but still add your own `schemaEnhancer` you can compose it along with your own:
+
+```js
+import { composeSchema } from '@plone/volto/helpers';
+import { SeparatorStyleEnhancer } from '@kitconcept/volto-separator-block';
+
+    config.blocks.blocksConfig.separator = {
+      ...config.blocks.blocksConfig.separator,
+      schemaEnhancer: composeSchema(mySeparatorSchemaEnhancer, defaultSeparatorEnhancer),
+    }
+```
+
 # Credits
 
 <img alt="Forschungszentrum Jülich" src="https://github.com/kitconcept/volto-blocks/raw/master/fz-juelich.svg" width="200px" />
