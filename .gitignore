@@ -1,4 +1,6 @@
 node_modules
+addon-testing-project
+.changelog.draft
 build
 
 # yarn 3
