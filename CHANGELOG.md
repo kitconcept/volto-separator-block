@@ -8,6 +8,21 @@
 
 <!-- towncrier release notes start -->
 
+## 3.0.0 (2023-01-19)
+
+### Breaking
+
+- Added alignment options as a block extender @danalvrz [#5](https://github.com/kitconcept/volto-export/pull/5)
+
+### Feature
+
+- Add towncrier, update to latest CI practices @sneridagh [#6](https://github.com/kitconcept/volto-export/pull/6)
+
+### Internal
+
+- Update to latest Volto 16 best practices, yarn 3 @davisagli [#4](https://github.com/kitconcept/volto-export/pull/4)
+
+
 ## 2.0.0 (2022-09-02)
 
 ### Breaking
