@@ -19,12 +19,12 @@ msgstr ""
 #: components/schema
 # defaultMessage: Alignment
 msgid "Alignment"
-msgstr ""
+msgstr "Ausrichtung"
 
 #: components/schema
 # defaultMessage: Hide Separator Line
 msgid "Hide Separator Line"
-msgstr ""
+msgstr "keine Linie anzeigen"
 
 #: index
 # defaultMessage: Separator
