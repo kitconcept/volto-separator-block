@@ -8,6 +8,13 @@
 
 <!-- towncrier release notes start -->
 
+## 3.0.1 (2023-01-25)
+
+### Bugfix
+
+- Add missing de translations. [davisagli] [#7](https://github.com/kitconcept/volto-export/pull/7)
+
+
 ## 3.0.0 (2023-01-19)
 
 ### Breaking
