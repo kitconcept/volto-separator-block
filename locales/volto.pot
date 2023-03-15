@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Plone\n"
-"POT-Creation-Date: 2022-12-28T19:43:37.782Z\n"
+"POT-Creation-Date: 2023-03-15T18:55:41.677Z\n"
 "Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -29,7 +29,7 @@ msgid "Separator"
 msgstr ""
 
 #: components/schema
-# defaultMessage: Separator Block
+# defaultMessage: Separator
 msgid "Separator Block"
 msgstr ""
 

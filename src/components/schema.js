@@ -8,7 +8,7 @@ const messages = defineMessages({
   },
   separatorBlock: {
     id: 'Separator Block',
-    defaultMessage: 'Separator Block',
+    defaultMessage: 'Separator',
   },
   noLine: {
     id: 'Hide Separator Line',
