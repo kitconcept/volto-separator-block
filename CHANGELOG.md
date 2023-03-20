@@ -8,6 +8,13 @@
 
 <!-- towncrier release notes start -->
 
+## 3.0.2 (2023-03-20)
+
+### Bugfix
+
+- Remove "block" from messages @danalvrz [#8](https://github.com/kitconcept/volto-export/pull/8)
+
+
 ## 3.0.1 (2023-01-25)
 
 ### Bugfix
