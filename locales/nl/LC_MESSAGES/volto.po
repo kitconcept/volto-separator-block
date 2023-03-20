@@ -31,7 +31,7 @@ msgid "Separator"
 msgstr ""
 
 #: components/schema
-# defaultMessage: Separator Block
+# defaultMessage: Separator
 msgid "Separator Block"
 msgstr ""
 

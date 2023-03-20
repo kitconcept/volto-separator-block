@@ -32,9 +32,9 @@ msgid "Separator"
 msgstr "Trenner"
 
 #: components/schema
-# defaultMessage: Separator Block
+# defaultMessage: Separator
 msgid "Separator Block"
-msgstr "Trenner Block"
+msgstr "Trenner"
 
 #: components/schema
 # defaultMessage: Title
