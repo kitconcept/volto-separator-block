@@ -1,0 +1,42 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Plone\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-15T18:55:41.677Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
+"Language: \n"
+"Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8\n"
+"Domain: volto\n"
+
+#: components/schema
+# defaultMessage: Alignment
+msgid "Alignment"
+msgstr "Alinhamento"
+
+#: components/schema
+# defaultMessage: Hide Separator Line
+msgid "Hide Separator Line"
+msgstr "Ocultar separador"
+
+#: index
+# defaultMessage: Separator
+msgid "Separator"
+msgstr "Separador"
+
+#: components/schema
+# defaultMessage: Separator
+msgid "Separator Block"
+msgstr "Separador"
+
+#: components/schema
+# defaultMessage: Title
+msgid "Title"
+msgstr "Título"
