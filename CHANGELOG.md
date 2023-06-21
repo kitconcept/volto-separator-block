@@ -8,6 +8,17 @@
 
 <!-- towncrier release notes start -->
 
+## 3.2.0 (2023-06-21)
+
+### Feature
+
+- Use new docker based testing infrastructure @sneridagh [#11](https://github.com/kitconcept/volto-separator-block/pull/11)
+
+### Bugfix
+
+- Fix CSS for blocks chooser icon @sneridagh [#12](https://github.com/kitconcept/volto-separator-block/pull/12)
+
+
 ## 3.1.0 (2023-06-06)
 
 ### Feature
