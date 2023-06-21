@@ -1,4 +1,4 @@
-// //Separator Block
+// Separator Block
 .block.separator {
   top: unset;
   display: block;
@@ -51,4 +51,10 @@
       }
     }
   }
+}
+
+// Separator blocks chooser fix due to classname leak from core
+.blocks-chooser .separator {
+  position: static;
+  height: unset;
 }
