@@ -8,6 +8,13 @@
 
 <!-- towncrier release notes start -->
 
+## 3.2.1 (2023-07-05)
+
+### Bugfix
+
+- Fix schema enhancer fields override, use the ones coming from above, if any @sneridagh [#13](https://github.com/kitconcept/volto-separator-block/pull/13)
+
+
 ## 3.2.0 (2023-06-21)
 
 ### Feature
