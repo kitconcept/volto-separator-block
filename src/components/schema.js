@@ -38,7 +38,11 @@ export const SeparatorSchema = (props) => {
 export const SeparatorStyleEnhancer = ({ schema, intl }) => {
   addStyling({ schema, intl });
 
-  schema.properties.styles.schema.fieldsets[0].fields = ['align', 'noLine'];
+  schema.properties.styles.schema.fieldsets[0].fields = [
+    ...schema.properties.styles.schema.fieldsets[0].fields,
+    'align',
+    'noLine',
+  ];
   schema.properties.styles.schema.properties.align = {
     widget: 'align',
     title: intl.formatMessage(messages.align),
