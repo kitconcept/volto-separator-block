@@ -1,0 +1,1 @@
+Fix schema enhancer fields override, use the ones coming from above, if any @sneridagh
