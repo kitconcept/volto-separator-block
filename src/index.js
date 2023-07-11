@@ -12,7 +12,7 @@ defineMessages({
   },
 });
 
-export default (config) => {
+const applyConfig = (config) => {
   config.blocks.blocksConfig.separator = {
     id: 'separator',
     title: 'Separator',
@@ -33,3 +33,5 @@ export default (config) => {
 
   return config;
 };
+
+export default applyConfig;
