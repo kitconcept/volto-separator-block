@@ -8,6 +8,13 @@
 
 <!-- towncrier release notes start -->
 
+## 3.2.2 (2023-07-11)
+
+### Internal
+
+- Remove anonymous default export @sneridagh [#0](https://github.com/kitconcept/volto-separator-block/pull/0)
+
+
 ## 3.2.1 (2023-07-05)
 
 ### Bugfix
