@@ -10,10 +10,6 @@ const messages = defineMessages({
     id: 'Separator Block',
     defaultMessage: 'Separator',
   },
-  noLine: {
-    id: 'Hide Separator Line',
-    defaultMessage: 'Hide Separator Line',
-  },
   align: {
     id: 'Alignment',
     defaultMessage: 'Alignment',
@@ -41,7 +37,6 @@ export const SeparatorStyleEnhancer = ({ schema, intl }) => {
   schema.properties.styles.schema.fieldsets[0].fields = [
     ...schema.properties.styles.schema.fieldsets[0].fields,
     'align',
-    'noLine',
   ];
   schema.properties.styles.schema.properties.align = {
     widget: 'align',
@@ -50,9 +45,5 @@ export const SeparatorStyleEnhancer = ({ schema, intl }) => {
     default: 'full',
   };
 
-  schema.properties.styles.schema.properties.noLine = {
-    title: intl.formatMessage(messages.noLine),
-    type: 'boolean',
-  };
   return schema;
 };

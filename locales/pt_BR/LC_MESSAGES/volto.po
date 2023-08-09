@@ -21,11 +21,6 @@ msgstr ""
 msgid "Alignment"
 msgstr "Alinhamento"
 
-#: components/schema
-# defaultMessage: Hide Separator Line
-msgid "Hide Separator Line"
-msgstr "Ocultar separador"
-
 #: index
 # defaultMessage: Separator
 msgid "Separator"
