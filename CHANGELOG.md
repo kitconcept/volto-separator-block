@@ -8,6 +8,13 @@
 
 <!-- towncrier release notes start -->
 
+## 4.0.0 (2023-08-09)
+
+### Bugfix
+
+- Remove 'no line' option. @davisagli [#14](https://github.com/kitconcept/volto-separator-block/pull/14)
+
+
 ## 3.2.2 (2023-07-11)
 
 ### Internal
