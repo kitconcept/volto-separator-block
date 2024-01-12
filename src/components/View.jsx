@@ -3,9 +3,9 @@ import cx from 'classnames';
 
 const SeparatorView = (props) => {
   //eslint-disable-next-line
-  const { className, data } = props;
+  const { className, data, style } = props;
   return (
-    <div className={cx('block separator', className)}>
+    <div className={cx('block separator', className)} style={style}>
       <div className="line" />
     </div>
   );
