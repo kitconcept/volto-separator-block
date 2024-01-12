@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 4.1.0 (2024-01-12)
+
+### Feature
+
+- Add custom CSS properties from StyleWrapper support @sneridagh [#15](https://github.com/kitconcept/volto-separator-block/pull/15)
+
 ## 4.0.0 (2023-08-09)
 
 ### Bugfix
