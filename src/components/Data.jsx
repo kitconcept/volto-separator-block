@@ -4,8 +4,14 @@ import { BlockDataForm } from '@plone/volto/components';
 import { SeparatorSchema } from './schema';
 
 const SeparatorData = (props) => {
-  const { data, block, onChangeBlock, schemaEnhancer, navRoot, contentType } =
-    props;
+  const {
+    data,
+    block,
+    onChangeBlock,
+    schemaEnhancer,
+    navRoot,
+    contentType,
+  } = props;
   const intl = useIntl();
   const schema = schemaEnhancer
     ? schemaEnhancer(SeparatorSchema({ ...props, intl }), props)
