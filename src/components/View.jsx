@@ -1,13 +1,21 @@
 import React from 'react';
 import cx from 'classnames';
+import { MaybeWrap } from '@plone/volto/components';
 
-const SeparatorView = (props) => {
-  //eslint-disable-next-line
-  const { className, data, style } = props;
+const LegacyWrapper = (props) => (
+  <div className={cx('block separator', props.className)}>{props.children}</div>
+);
+
+const SeparatorView = ({ data, isEditMode, className, blocksConfig }) => {
+  const isBlockModelv3 = blocksConfig?.separator?.v3;
   return (
-    <div className={cx('block separator', className)} style={style}>
+    <MaybeWrap
+      condition={!isBlockModelv3}
+      as={LegacyWrapper}
+      className={className}
+    >
       <div className="line" />
-    </div>
+    </MaybeWrap>
   );
 };
 
