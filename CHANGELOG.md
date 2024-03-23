@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 4.1.1 (2024-03-23)
+
+### Internal
+
+- Repackage with dep and peerDeps updates @sneridagh [#0](https://github.com/kitconcept/volto-separator-block/pull/0)
+
 ## 4.1.0 (2024-01-12)
 
 ### Feature

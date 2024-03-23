@@ -1,6 +1,6 @@
 {
   "name": "@kitconcept/volto-separator-block",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "volto-separator-block: Volto add-on that provides a visual separator between blocks",
   "main": "src/index.js",
   "license": "MIT",
