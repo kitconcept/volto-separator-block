@@ -4,7 +4,7 @@ on:
     paths:
       - "*.js"
       - "*.json"
-      - "*.yml"
+      - ".github/workflows/*.yml"
       - "cypress/**"
       - "packages/**"
 
