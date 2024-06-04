@@ -1396,8 +1396,8 @@ importers:
   packages/volto-separator-block:
     dependencies:
       '@plone/components':
-        specifier: 1.7.0
-        version: 1.7.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: workspace:*
+        version: link:../../core/packages/components
       react:
         specifier: 18.2.0
         version: 18.2.0
@@ -3571,15 +3571,6 @@ packages:
   '@pkgr/core@0.1.1':
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
-
-  '@plone/components@1.7.0':
-    resolution: {integrity: sha512-T/GOFwKEhxrjp2S0sqRgTz7ZN8TcxvvPKKq7af2vARpEGWW8HszCX9CTDo0t3decSal0NqWqHiFbY2q6xbvrNA==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-    peerDependenciesMeta:
-      react-dom:
-        optional: true
 
   '@plone/scripts@3.6.1':
     resolution: {integrity: sha512-MlthVUk+11854Lx7dSiwNddVpUdNHvLlKgCMvc8GtQ6ixfyf9gcGM3SZXAaLqxgR+ncqKZEmEAMxtwckQDHjaw==}
@@ -6522,9 +6513,6 @@ packages:
 
   classnames@2.2.6:
     resolution: {integrity: sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==}
-
-  classnames@2.5.1:
-    resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
 
   clean-css@5.3.3:
     resolution: {integrity: sha512-D5J+kHaVb/wKSFcyyV75uCn8fiY4sV38XJoe4CUyGQ+mOU/fMVYUdH1hJC+CJQ5uY3EnW27SbJYS4X8BiLrAFg==}
@@ -16663,7 +16651,9 @@ snapshots:
       source-map: 0.6.1
       string-length: 2.0.0
     transitivePeerDependencies:
+      - bufferutil
       - supports-color
+      - utf-8-validate
 
   '@jest/reporters@26.6.2':
     dependencies:
@@ -18225,18 +18215,6 @@ snapshots:
     optional: true
 
   '@pkgr/core@0.1.1': {}
-
-  '@plone/components@1.7.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
-    dependencies:
-      '@react-aria/utils': 3.24.1(react@18.2.0)
-      '@react-spectrum/utils': 3.11.7(react@18.2.0)
-      classnames: 2.5.1
-      clsx: 2.1.1
-      lodash: 4.17.21
-      react: 18.2.0
-      react-aria-components: 1.2.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-    optionalDependencies:
-      react-dom: 18.2.0(react@18.2.0)
 
   '@plone/scripts@3.6.1':
     dependencies:
@@ -20878,7 +20856,7 @@ snapshots:
   '@types/vinyl@2.0.12':
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 15.14.9
+      '@types/node': 20.14.1
 
   '@types/ws@8.5.10':
     dependencies:
@@ -22621,8 +22599,6 @@ snapshots:
       static-extend: 0.1.2
 
   classnames@2.2.6: {}
-
-  classnames@2.5.1: {}
 
   clean-css@5.3.3:
     dependencies:
@@ -26529,9 +26505,7 @@ snapshots:
       pretty-format: 24.9.0
       throat: 4.1.0
     transitivePeerDependencies:
-      - bufferutil
       - supports-color
-      - utf-8-validate
 
   jest-jasmine2@26.6.3:
     dependencies:

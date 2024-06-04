@@ -1,7 +1,7 @@
 {
   "name": "@kitconcept/volto-separator-block",
-  "version": "1.0.0-alpha.0",
-  "description": "A new add-on for Volto",
+  "version": "4.1.1",
+  "description": "volto-separator-block: Volto add-on that provides a visual separator between blocks",
   "main": "src/index.js",
   "license": "MIT",
   "keywords": [
@@ -27,7 +27,7 @@
     "release-alpha": "release-it --preRelease=alpha"
   },
   "dependencies": {
-    "@plone/components": "1.7.0"
+    "@plone/components": "workspace:*"
   },
   "peerDependencies": {
     "react": "18.2.0",
