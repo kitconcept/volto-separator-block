@@ -7,7 +7,7 @@ const LegacyWrapper = (props) => (
 );
 
 const SeparatorView = ({ data, isEditMode, className, blocksConfig }) => {
-  const isBlockModelv3 = blocksConfig?.separator?.v3;
+  const isBlockModelv3 = blocksConfig?.separator?.blockModel === 3;
   return (
     <MaybeWrap
       condition={!isBlockModelv3}
