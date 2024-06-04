@@ -2,8 +2,8 @@ import React from 'react';
 import cx from 'classnames';
 import { MaybeWrap } from '@plone/volto/components';
 
-const LegacyWrapper = (props) => (
-  <div className={cx('block separator', props.className)}>{props.children}</div>
+const LegacyWrapper = ({ className, children }) => (
+  <div className={cx('block separator', className)}>{children}</div>
 );
 
 const SeparatorView = ({ data, isEditMode, className, blocksConfig }) => {
