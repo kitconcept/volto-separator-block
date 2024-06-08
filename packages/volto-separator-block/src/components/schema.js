@@ -10,9 +10,9 @@ const messages = defineMessages({
     id: 'Separator Block',
     defaultMessage: 'Separator',
   },
-  align: {
-    id: 'Alignment',
-    defaultMessage: 'Alignment',
+  shortline: {
+    id: 'Short line',
+    defaultMessage: 'Short line',
   },
 });
 
@@ -35,14 +35,12 @@ export const SeparatorStyleEnhancer = ({ schema, intl }) => {
   addStyling({ schema, intl });
 
   schema.properties.styles.schema.fieldsets[0].fields = [
+    'shortLine',
     ...schema.properties.styles.schema.fieldsets[0].fields,
-    'align',
   ];
-  schema.properties.styles.schema.properties.align = {
-    widget: 'align',
-    title: intl.formatMessage(messages.align),
-    actions: ['full', 'center', 'left'],
-    default: 'full',
+  schema.properties.styles.schema.properties.shortLine = {
+    title: intl.formatMessage(messages.shortline),
+    type: 'boolean',
   };
 
   return schema;
