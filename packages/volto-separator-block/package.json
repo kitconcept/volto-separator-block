@@ -32,10 +32,10 @@
   "peerDependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-intl": "3.8.0"
+    "react-intl": "^3.12.1"
   },
   "devDependencies": {
-    "@plone/scripts": "^3.6.1",
-    "release-it": "^17.1.1"
+    "@plone/scripts": "^3.6.2",
+    "release-it": "^17.7.1"
   }
 }
