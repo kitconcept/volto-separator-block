@@ -21,7 +21,7 @@ The Volto Separator Block allows editors to add a visual separator between block
 
 ## Block Schema
 
-This block features an option to make the line short, for visual variety purpuses. If that is the case, the line's `width` points to the custom property `--short-line-width`, which can be set if desired.
+This block features an option to make the line short, for visual variety purposes. If that is the case, the line's `width` points to the custom property `--short-line-width`, which can be set if desired.
 
 The `schema` can be extended by using with your own `schemaEnhancer`:
 
