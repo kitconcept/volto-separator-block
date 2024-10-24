@@ -19,35 +19,17 @@ The Volto Separator Block allows editors to add a visual separator between block
 
 ![Separator-Block](https://github.com/kitconcept/volto-separator-block/raw/master/screencast.gif)
 
-## Block Alignment Enhancer
+## Block Schema
 
-This block features by default a block `schemaEnhancer` that provides an alignment option for the separator. This can be disabled by overwriting with your own `schemaEnhancer`
+This block features an option to make the line short, for visual variety purpuses. If that is the case, the line's `width` points to the custom property `--short-line-width`, which can be set if desired.
+
+The `schema` can be extended by using with your own `schemaEnhancer`:
 
 ```js
   config.blocks.blocksConfig.separator = {
     ...config.blocks.blocksConfig.separator,
     schemaEnhancer: mySeparatorSchemaEnhancer,
   }
-```
-or setting it to `null` or `undefined`:
-
-```js
-  config.blocks.blocksConfig.separator = {
-    ...config.blocks.blocksConfig.separator,
-    schemaEnhancer: null,
-  }
-```
-
-Also, if you want to keep the default alignment but still add your own `schemaEnhancer` you can compose it along with your own:
-
-```js
-import { composeSchema } from '@plone/volto/helpers';
-import { SeparatorStyleEnhancer } from '@kitconcept/volto-separator-block';
-
-    config.blocks.blocksConfig.separator = {
-      ...config.blocks.blocksConfig.separator,
-      schemaEnhancer: composeSchema(mySeparatorSchemaEnhancer, defaultSeparatorEnhancer),
-    }
 ```
 
 ## Installation

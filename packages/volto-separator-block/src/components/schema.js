@@ -1,11 +1,6 @@
-import { addStyling } from '@plone/volto/helpers/Extensions/withBlockSchemaEnhancer';
 import { defineMessages } from 'react-intl';
 
 const messages = defineMessages({
-  title: {
-    id: 'Title',
-    defaultMessage: 'Title',
-  },
   separatorBlock: {
     id: 'Separator Block',
     defaultMessage: 'Separator',
@@ -17,31 +12,18 @@ const messages = defineMessages({
 });
 
 export const SeparatorSchema = (props) => {
+  const { intl } = props;
+
   return {
-    title: props.intl.formatMessage(messages.separatorBlock),
+    title: intl.formatMessage(messages.separatorBlock),
     block: 'separator',
-    fieldsets: [
-      {
-        id: 'default',
-        title: 'Default',
+    fieldsets: [{ id: 'default', title: 'Default', fields: ['shortLine'] }],
+    properties: {
+      shortLine: {
+        title: intl.formatMessage(messages.shortline),
+        type: 'boolean',
       },
-    ],
-    properties: {},
+    },
     required: [],
   };
-};
-
-export const SeparatorStyleEnhancer = ({ schema, intl }) => {
-  addStyling({ schema, intl });
-
-  schema.properties.styles.schema.fieldsets[0].fields = [
-    'shortLine',
-    ...schema.properties.styles.schema.fieldsets[0].fields,
-  ];
-  schema.properties.styles.schema.properties.shortLine = {
-    title: intl.formatMessage(messages.shortline),
-    type: 'boolean',
-  };
-
-  return schema;
 };

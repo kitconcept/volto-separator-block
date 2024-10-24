@@ -9,12 +9,12 @@ const LegacyWrapper = (props) => (
 );
 
 const SeparatorView = (props) => {
-  const { blocksConfig } = props;
+  const { blocksConfig, data } = props;
   const isBlockModelv3 = blocksConfig?.separator?.blockModel === 3;
 
   return (
     <MaybeWrap condition={!isBlockModelv3} as={LegacyWrapper} {...props}>
-      <div className="line" />
+      <div className={cx('line', { short: data.shortLine })} />
     </MaybeWrap>
   );
 };
