@@ -26,9 +26,9 @@
     "stylelint": "stylelint 'packages/**/src/**/*.{css,scss,less}' --allow-empty-input",
     "stylelint:fix": "stylelint 'packages/**/src/**/*.{css,scss,less}' --fix --allow-empty-input",
     "dry-release": "release-it --dry-run",
-    "release": "pnpm --filter @kitconcept/volto-button-block release",
-    "release-major-alpha": "pnpm --filter @kitconcept/volto-button-block release-major-alpha",
-    "release-alpha": "pnpm --filter @kitconcept/volto-button-block release-alpha",
+    "release": "pnpm --filter @kitconcept/volto-separator-block release",
+    "release-major-alpha": "pnpm --filter @kitconcept/volto-separator-block release-major-alpha",
+    "release-alpha": "pnpm --filter @kitconcept/volto-separator-block release-alpha",
     "storybook": "pnpm build:deps && VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto storybook dev -p 6006 -c $(pwd)/.storybook",
     "build-storybook": "pnpm build:deps && VOLTOCONFIG=$(pwd)/volto.config.js pnpm --filter @plone/volto build-storybook -c $(pwd)/.storybook"
   },
