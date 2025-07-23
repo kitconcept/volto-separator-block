@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 4.1.3 (2025-07-23)
+
+### Feature
+
+- Add Spanish translation #18 @macagua [#18](https://github.com/kitconcept/volto-separator-block/issue/18)
+
 ## 4.1.2 (2024-07-30)
 
 ### Internal
