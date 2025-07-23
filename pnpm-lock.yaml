@@ -1405,8 +1405,8 @@ importers:
         specifier: 18.2.0
         version: 18.2.0(react@18.2.0)
       react-intl:
-        specifier: 3.8.0
-        version: 3.8.0(react@18.2.0)
+        specifier: ^3.12.1
+        version: 3.12.1(react@18.2.0)
     devDependencies:
       '@plone/scripts':
         specifier: ^3.6.1
@@ -2639,6 +2639,9 @@ packages:
 
   '@formatjs/icu-skeleton-parser@1.8.2':
     resolution: {integrity: sha512-k4ERKgw7aKGWJZgTarIcNEmvyTVD9FYh0mTrrBMHZ1b8hUu6iOJ4SzsZlo3UNAvHYa+PnvntIwRPt1/vy4nA9Q==}
+
+  '@formatjs/intl-displaynames@1.2.10':
+    resolution: {integrity: sha512-GROA2RP6+7Ouu0WnHFF78O5XIU7pBfI19WM1qm93l6MFWibUk67nCfVCK3VAYJkLy8L8ZxjkYT11VIAfvSz8wg==}
 
   '@formatjs/intl-listformat@1.4.8':
     resolution: {integrity: sha512-WNMQlEg0e50VZrGIkgD5n7+DAMGt3boKi1GJALfhFMymslJb5i+5WzWxyj/3a929Z6MAFsmzRIJjKuv+BxKAOQ==}
@@ -8365,7 +8368,7 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
+    deprecated: Upgrade to fsevents v2 to mitigate potential security issues
 
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -12362,6 +12365,11 @@ packages:
       react: ^16.12.0 || ^17.0.2 || ^18.0.0
       react-intl: "^2.2.2 ||\_^3.0.0 || ^4.0.0 || ^5.0.0"
       react-redux: ^5.0.1 || ^6.0.0 || ^7.0.0
+
+  react-intl@3.12.1:
+    resolution: {integrity: sha512-cgumW29mwROIqyp8NXStYsoIm27+8FqnxykiLSawWjOxGIBeLuN/+p2srei5SRIumcJefOkOIHP+NDck05RgHg==}
+    peerDependencies:
+      react: ^16.3.0
 
   react-intl@3.8.0:
     resolution: {integrity: sha512-jWSbc7PUJOpmy0gC9LzTyERpt/auYmMyY0jtCmczgmRns5MIKG9Bav+NpCyZ6XG2jJQgJNWpLkMFy8u7MgjuqA==}
@@ -16378,6 +16386,10 @@ snapshots:
     dependencies:
       '@formatjs/ecma402-abstract': 2.0.0
       tslib: 2.6.2
+
+  '@formatjs/intl-displaynames@1.2.10':
+    dependencies:
+      '@formatjs/intl-utils': 2.3.0
 
   '@formatjs/intl-listformat@1.4.8':
     dependencies:
@@ -30355,6 +30367,22 @@ snapshots:
       react: 18.2.0
       react-intl: 3.8.0(react@18.2.0)
       react-redux: 8.1.2(@types/react-dom@18.2.12)(@types/react@18.2.27)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(redux@4.2.1)
+
+  react-intl@3.12.1(react@18.2.0):
+    dependencies:
+      '@formatjs/intl-displaynames': 1.2.10
+      '@formatjs/intl-listformat': 1.4.8
+      '@formatjs/intl-relativetimeformat': 4.5.16
+      '@formatjs/intl-unified-numberformat': 3.3.7
+      '@formatjs/intl-utils': 2.3.0
+      '@types/hoist-non-react-statics': 3.3.5
+      '@types/invariant': 2.2.37
+      hoist-non-react-statics: 3.3.2
+      intl-format-cache: 4.3.1
+      intl-messageformat: 7.8.4
+      intl-messageformat-parser: 3.6.4
+      react: 18.2.0
+      shallow-equal: 1.2.1
 
   react-intl@3.8.0(react@18.2.0):
     dependencies:
