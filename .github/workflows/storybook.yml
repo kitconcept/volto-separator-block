@@ -4,6 +4,7 @@ on:
     paths:
       - "*.js"
       - "*.json"
+      - "*.yaml"
       - "packages/**"
       - ".github/workflows/storybook.yml"
 
