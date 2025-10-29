@@ -48,17 +48,6 @@ export const SeparatorStyleEnhancer = ({ schema, formData, intl }) => {
   addStyling({ schema, intl });
 
   schema.properties.styles.schema.fieldsets[0].fields = [
-    ...schema.properties.styles.schema.fieldsets[0].fields,
-    'align',
-  ];
-  schema.properties.styles.schema.properties.align = {
-    widget: 'align',
-    title: intl.formatMessage(messages.align),
-    actions: ['full', 'center', 'left'],
-    default: 'full',
-  };
-
-  schema.properties.styles.schema.fieldsets[0].fields = [
     'blockWidth:noprefix',
     ...schema.properties.styles.schema.fieldsets[0].fields,
   ];
