@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 5.0.0-alpha.0 (2025-10-29)
+
+### Breaking
+
+- Refactor to VLT 8. Transfer all customizations to the add-on. @sneridagh [#21](https://github.com/kitconcept/volto-separator-block/issue/21)
+
 ## 4.2.1 (2025-07-23)
 
 ## 4.2.0 (2025-07-23)
