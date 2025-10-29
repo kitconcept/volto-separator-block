@@ -2,9 +2,18 @@ import React from 'react';
 import { useIntl } from 'react-intl';
 import { BlockDataForm } from '@plone/volto/components/manage/Form';
 import { SeparatorSchema } from './schema';
+import type { BlockEditProps } from '@plone/types';
 
-const SeparatorData = (props) => {
-  const { block, data, onChangeBlock } = props;
+const SeparatorData = (props: BlockEditProps) => {
+  const {
+    block,
+    data,
+    onChangeBlock,
+    blocksConfig,
+    navRoot,
+    contentType,
+    blocksErrors,
+  } = props;
   const intl = useIntl();
   const schema = SeparatorSchema({ ...props, intl });
 
@@ -19,8 +28,12 @@ const SeparatorData = (props) => {
         });
       }}
       formData={data}
-      fieldIndex={data.index}
       block={block}
+      onChangeBlock={onChangeBlock}
+      blocksConfig={blocksConfig}
+      navRoot={navRoot}
+      contentType={contentType}
+      errors={blocksErrors}
     />
   );
 };

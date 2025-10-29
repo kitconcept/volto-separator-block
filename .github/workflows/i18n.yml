@@ -4,11 +4,12 @@ on:
     paths:
       - "*.js"
       - "*.json"
-      - ".github/workflows/*.yml"
+      - "*.yaml"
       - "packages/**"
+      - ".github/workflows/i18n.yml"
 
 env:
-  NODE_VERSION: 20.x
+  NODE_VERSION: 24.x
 
 jobs:
   unit:

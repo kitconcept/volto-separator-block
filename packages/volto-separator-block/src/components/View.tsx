@@ -1,9 +1,8 @@
-import React from 'react';
 import cx from 'classnames';
+import type { BlockViewProps } from '@plone/types';
 
-const SeparatorView = (props) => {
-  //eslint-disable-next-line
-  const { className, data, style } = props;
+const SeparatorView = (props: BlockViewProps) => {
+  const { className, style } = props;
   return (
     <div className={cx('block separator', className)} style={style}>
       <div className="line" />
