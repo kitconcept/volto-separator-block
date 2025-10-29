@@ -14,6 +14,18 @@ const messages = defineMessages({
     id: 'Alignment',
     defaultMessage: 'Alignment',
   },
+  BlockWidth: {
+    id: 'Block Width',
+    defaultMessage: 'Block Width',
+  },
+  Alignment: {
+    id: 'Alignment',
+    defaultMessage: 'Alignment',
+  },
+  shortline: {
+    id: 'Short line',
+    defaultMessage: 'Short line',
+  },
 });
 
 export const SeparatorSchema = (props) => {
@@ -32,7 +44,7 @@ export const SeparatorSchema = (props) => {
   };
 };
 
-export const SeparatorStyleEnhancer = ({ schema, intl }) => {
+export const SeparatorStyleEnhancer = ({ schema, formData, intl }) => {
   addStyling({ schema, intl });
 
   schema.properties.styles.schema.fieldsets[0].fields = [
@@ -45,6 +57,42 @@ export const SeparatorStyleEnhancer = ({ schema, intl }) => {
     actions: ['full', 'center', 'left'],
     default: 'full',
   };
+
+  schema.properties.styles.schema.fieldsets[0].fields = [
+    'blockWidth:noprefix',
+    ...schema.properties.styles.schema.fieldsets[0].fields,
+  ];
+
+  schema.properties.styles.schema.properties['blockWidth:noprefix'] = {
+    widget: 'blockWidth',
+    title: intl.formatMessage(messages.BlockWidth),
+    default: 'default',
+    filterActions: ['narrow', 'default'],
+  };
+
+  schema.properties.styles.schema.fieldsets[0].fields = [
+    'align:noprefix',
+    ...schema.properties.styles.schema.fieldsets[0].fields,
+  ];
+
+  schema.properties.styles.schema.properties['align:noprefix'] = {
+    widget: 'blockAlignment',
+    title: intl.formatMessage(messages.Alignment),
+    default: 'left',
+  };
+
+  schema.properties.styles.schema.fieldsets[0].fields = [
+    'shortLine',
+    ...schema.properties.styles.schema.fieldsets[0].fields,
+  ];
+
+  schema.properties.styles.schema.properties.shortLine = {
+    title: intl.formatMessage(messages.shortline),
+    type: 'boolean',
+  };
+
+  schema.properties.styles.schema.properties['align:noprefix'].disabled =
+    !formData?.styles?.shortLine;
 
   return schema;
 };
