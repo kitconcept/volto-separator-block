@@ -9,7 +9,7 @@ on:
       - "packages/**"
 
 env:
-  NODE_VERSION: 20.x
+  NODE_VERSION: 24.x
   CYPRESS_RETRIES: 2
 
 jobs:

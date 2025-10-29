@@ -24,6 +24,7 @@ export const SeparatorSchema = (props) => {
       {
         id: 'default',
         title: 'Default',
+        fields: [],
       },
     ],
     properties: {},
