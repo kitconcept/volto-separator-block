@@ -237,12 +237,10 @@ make acceptance-test
 
 The project is licensed under the MIT license.
 
-# Credits
+## Credits
 
-<img alt="Forschungszentrum Jülich" src="https://github.com/kitconcept/volto-blocks/raw/master/fz-juelich.svg" width="200px" />
+<img alt="Deutsches Zentrum für Luft- und Raumfahrt" src="https://github.com/kitconcept/volto-slider-block/raw/main/dlr.svg" width="230px" />
 
-The development of this plugin has been kindly sponsored by [Forschungszentrum Jülich](https://fz-juelich.de).
+<img alt="Forschungszentrum Jülich" src="https://github.com/kitconcept/volto-slider-block/raw/main/fz-juelich.svg" width="200px" />
 
-# License
-
-The project is licensed under the MIT license.
+The development of this plugin has been kindly sponsored by [Forschungszentrum Jülich](https://fz-juelich.de) and the [German Aerospace Center (DLR)](https://dlr.de).
