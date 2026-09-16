@@ -47,7 +47,12 @@
     },
     "onlyBuiltDependencies": [
       "@swc/core",
+      "core-js",
       "core-js-pure",
+      "cypress",
+      "es5-ext",
+      "esbuild",
+      "full-icu",
       "lightningcss-cli"
     ]
   },
