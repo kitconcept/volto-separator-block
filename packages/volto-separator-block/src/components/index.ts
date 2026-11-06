@@ -4,6 +4,7 @@ import divideHorizontalSVG from '@plone/volto/icons/divide-horizontal.svg';
 import SeparatorView from './View';
 import SeparatorEdit from './Edit';
 import { SeparatorSchema } from './schema';
+import { SeparatorDataAdapter } from './adapter';
 
 import type { BlockConfigBase } from '@plone/types/src/config/Blocks';
 
@@ -26,6 +27,7 @@ const blockConfig: BlockConfigBase = {
   mostUsed: true,
   sidebarTab: 1,
   blockSchema: SeparatorSchema,
+  dataAdapter: SeparatorDataAdapter,
 };
 
 export default blockConfig;
