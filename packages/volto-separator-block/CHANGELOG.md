@@ -8,6 +8,12 @@
 
 <!-- towncrier release notes start -->
 
+## 5.1.0 (2026-11-06)
+
+### Feature
+
+- Added the block documentation and data adapter for the Separator block, so the Volto `@blocks-schema` endpoint publishes its schema and docs with Volto 19.6 or later. @ericof [#23](https://github.com/kitconcept/volto-separator-block/issue/23)
+
 ## 5.0.0 (2026-09-16)
 
 ## 5.0.0-alpha.0 (2025-10-29)
