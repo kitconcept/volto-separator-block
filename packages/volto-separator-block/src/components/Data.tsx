@@ -2,6 +2,7 @@ import React from 'react';
 import { useIntl } from 'react-intl';
 import { BlockDataForm } from '@plone/volto/components/manage/Form';
 import { SeparatorSchema } from './schema';
+import { SeparatorDataAdapter } from './adapter';
 import type { BlockEditProps } from '@plone/types';
 
 const SeparatorData = (props: BlockEditProps) => {
@@ -22,10 +23,7 @@ const SeparatorData = (props: BlockEditProps) => {
       schema={schema}
       title={schema.title}
       onChangeField={(id, value) => {
-        onChangeBlock(block, {
-          ...data,
-          [id]: value,
-        });
+        SeparatorDataAdapter({ block, data, id, onChangeBlock, value });
       }}
       formData={data}
       block={block}

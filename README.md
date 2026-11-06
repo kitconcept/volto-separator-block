@@ -111,6 +111,8 @@ If this package provides a Volto theme, and you want to activate it, then add th
 const theme = '@kitconcept/volto-separator-block';
 ```
 
+The block schema and documentation published by the `@blocks-schema` endpoint of the Volto server need Volto 19.6 or later. The add-on keeps working on older Volto 19 releases without them.
+
 ## Test installation
 
 Visit http://localhost:3000/ in a browser, login, and check the awesome new features.
